@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Merriweather');
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ------------------------------------
+HEADER
+-------------------------------------*/
+header {
+  padding-top: 30px;
+  background-image: url(../images/cover.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  min-height: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+
+}
+
+header h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+/* ------------------------------------
+HEADER END
+-------------------------------------*/
+/* ------------------------------------
+NAV
+-------------------------------------*/
+nav {
+  padding: 10px 30px;
+}
+
+nav a {
+  font-family: "Josefin Sans",sans-serif;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 25px 35px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav i {
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* ------------------------------------
+NAV END
+-------------------------------------*/
+h2 {
+  font-family: "Josefin Sans",sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: black;
+}
+
+h3 {
+  font-family: "Josefin Sans",sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.homepage-imagery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 55px;
+  margin-top: 36px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.homepage-imagery a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.quote1 p {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.studio {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: -webkit-center;
+}
+
+.blog {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: -webkit-center;
+}
+
+.moodboards {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: -webkit-center;
+}
+/* ------------------------------------
+SERVICES
+-------------------------------------*/
+.service {
+  background-color: #f5f5f5;
+  padding: 55px;
+  margin-top: 75px;
+}
+
+.service-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 55px;
+}
+
+.service a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service button {
+background-color: #f5f5f5;
+}
+
+/* ------------------------------------
+SERVICES
+-------------------------------------*/
+
+
+/* ------------------------------------
+ABOUT
+-------------------------------------*/
+.about {
+  text-align: -webkit-center;
+  margin-top: 35px;
+}
+
+.about p {
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+/*----------
+WORKS
+----------*/
+
+.gallery-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 8px;
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 50px;
+  transition: all .3s ease-in-out;
+}
+
+.gallery-wrapper img:hover {
+  transform: scale(1.05,1.05);
+  transition: all 0.5s ease-in-out;
+}
+
+/* ------------------------------------
+CONTACT
+-------------------------------------*/
+
+.contact {
+  font-family: "Josefin Sans",sans-serif;
+  color: black;
+  text-transform: none;
+  background-color: #f5f5f5;
+
+}
+form {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+input,
+textarea {
+  border: 2px solid #dfdfdf;
+  padding: 10px 15px;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border .3s ease;
+}
+
+textarea {
+  height: 250px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #005EC8;
+}
+
+button {
+  border: 1px solid black;
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  outline: 0;
+  padding: 6px 8px;
+  margin-top: 20px;
+  transition: transform .3s ease;
+  border-radius: 2px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+#contactform button {
+background-color: #f5f5f5;
+}
+/* ------------------------------------
+FOOTER
+-------------------------------------*/
+footer {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: black;
+  color: white;
+  overflow: overlay;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding: 40px;
+}
+
+.social {
+  background-color: #2a2a2a;
+  padding: 5px;
+}
+
+.social li {
+  color: white;
+  display: inline;
+  padding: 10px;
+}
+
+.social i {
+  font-size: 24px;
+}
+
+.social i:hover {
+  transform: translateX(-4px);
+  transition: all 0.5s ease-in-out;
+}
+/* ------------------------------------
+FOOTER
+-------------------------------------*/
+@media only screen and (max-width: 925px) {
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    background-color: #f5f5f5;
+  }
+  .nav-links a {
+    display: block;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  /* Styles to apply with JS to slide the menu out or down */
+  .menu-open {
+    height: 300px;
+    transition: all .5s ease-in-out;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+  .homepage-imagery {
+    display: block;
+  }
+
+  .service-wrapper {
+    display: block;
+  }
+
+  .gallery-wrapper {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 17.5px;
+  }
+
+  p {
+    font-size: 13.5px;
+  }
+
+  input,
+  textarea {
+    font-size: 13.5px;
+  }
+
+  .social i {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 11px;
+  }
+}
